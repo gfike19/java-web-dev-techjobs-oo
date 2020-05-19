@@ -17,4 +17,17 @@ public class Main {
 //        }
 //    }
 
+    public static void main(String[]args) {
+//        Job j = new Job("Product tester", new Employer("ACME"), new Location("Desert"),
+//                new PositionType("Quality control"), new CoreCompetency("Persistence"));
+
+        Employer e = new Employer("Blah");
+        Location l = new Location("");
+        PositionType p = new PositionType("");
+        CoreCompetency c = new CoreCompetency("");
+        Job j = new Job("", e, l , p, c);
+
+        System.out.print(j.getEmployer());
+    }
+
 }
